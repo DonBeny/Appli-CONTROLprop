@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.CtrlZoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/main_ctrl_prop"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+
+            android:layout_marginStart="80dp"
+
+            android:orientation="horizontal" >
+
+            <ImageView android:id="@+id/ctrl_zone_activity_title_zone_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+
+                android:padding="15dp"
+
+                android:contentDescription="@string/_icon"
+                app:srcCompat="@drawable/abords_acces_immeubles_2_blanc"/>
+
+            <TextView android:id="@+id/ctrl_zone_activity_title_zone_lbl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+
+                android:gravity="left|center_vertical"
+                android:padding="25dp"
+                android:maxLines="2"
+
+                android:text="@string/lbl_zone"
+                android:textColor="@color/_white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/ctrl_zone_activity_prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:padding="20dp"
+
+            android:onClick="ctrlZoneActivityActions"
+            android:tag="finish"
+
+            android:text="@string/_prev"
+            android:textColor="@color/_white"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/ctrl_zone_activity_scroll_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:id="@+id/ctrl_zone_activity_grill_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

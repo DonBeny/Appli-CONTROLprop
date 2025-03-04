@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/image_fond_tablette"
+
+    tools:context=".controllers.activities.StartCtrlActivity" >
+
+    <GridLayout android:id="@+id/start_ctrl_activity_view_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/start_ctrl_activity_btn_lyt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="12" >
+
+        <!-- ROW 1 == IMG CTRL -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_columnSpan="2"
+
+            app:cardElevation="8dp" >
+
+            <ImageView android:id="@+id/start_ctrl_activity_ctrl_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/main_ctrl_prop"
+                android:contentDescription="@string/lbl_control_full"
+
+                app:srcCompat="@drawable/icone_controle" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 2 COL 1 == BTN PROG -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_prog_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_enabled"
+
+                android:text="@string/chx_conf_ctrl_prog"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/main_ctrl_prop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 2 COL 2 == BTN INOP -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_inopine_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_desabled"
+
+                android:textColor="@color/_dark_grey"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:text="@string/chx_conf_ctrl_inopine" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 3 == IMG METEO -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_columnSpan="2"
+
+            app:cardElevation="8dp" >
+
+            <ImageView android:id="@+id/start_ctrl_activity_meteo_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/main_ctrl_prop"
+                android:contentDescription="@string/lbl_meteo"
+
+                app:srcCompat="@drawable/icone_meteo" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 4 COL 1 == BTN NORM -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_norm_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_enabled"
+
+                android:text="@string/chx_conf_meteo_norm"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/main_ctrl_prop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 4 COL 2 == BTN PERTURB -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_perturb_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_desabled"
+
+                android:text="@string/chx_conf_meteo_perturb"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/_dark_grey" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 5 == IMG PROD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_columnSpan="2"
+
+            app:cardElevation="8dp" >
+
+            <ImageView android:id="@+id/start_ctrl_activity_prod_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/main_ctrl_prop"
+                android:contentDescription="@string/lbl_prod"
+
+                app:srcCompat="@drawable/icone_produit" />
+
+            <TextView android:id="@+id/start_ctrl_activity_info_prod_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="30dp"
+
+                android:onClick="startCtrlActivityActions"
+                android:tag="prod"
+
+                android:text="@string/symb_info"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 6 COL 1 == BTN PRESENT -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_present_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_enabled"
+
+                android:text="@string/chx_conf_conform"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/main_ctrl_prop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 6 COL 2 == BTN ABS -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_absent_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_desabled"
+
+                android:text="@string/chx_conf_no_conform"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/_dark_grey" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 7 == IMG AFF -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_columnSpan="2"
+
+            app:cardElevation="8dp">
+
+            <ImageView android:id="@+id/start_ctrl_activity_aff_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/main_ctrl_prop"
+                android:contentDescription="@string/lbl_aff"
+
+                app:srcCompat="@drawable/icone_affichage_2" />
+
+            <TextView android:id="@+id/start_ctrl_activity_info_aff_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="end|center_vertical"
+                android:paddingRight="30dp"
+
+                android:onClick="startCtrlActivityActions"
+                android:tag="aff"
+
+                android:text="@string/symb_info"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 8 COL 1 == BTN CONFORM -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_conform_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_enabled"
+
+                android:text="@string/chx_conf_conform"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/main_ctrl_prop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 8 COL 2 == BTN NOT CONFORM -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+
+            app:cardElevation="8dp" >
+
+            <Button android:id="@+id/start_ctrl_activity_no_conform_chx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="16dp"
+
+                android:background="@drawable/button_desabled"
+
+                android:text="@string/chx_conf_no_conform"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/_dark_grey" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+    
+    <LinearLayout android:id="@+id/start_ctrl_activity_btn_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:layout_alignParentBottom="true" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button android:id="@+id/start_ctrl_activity_start_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+
+                android:onClick="startCtrlActivityActions"
+                android:tag="go"
+
+                android:background="@drawable/button_selected_green"
+                android:textColor="@color/_white"
+                android:text="@string/btn_start" />
+
+            <pl.droidsonroids.gif.GifImageView android:id="@+id/start_ctrl_activity_wait_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="50dp"
+
+                android:elevation="10dp"
+                android:src="@drawable/load"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <Button android:id="@+id/start_ctrl_activity_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+
+            android:onClick="startCtrlActivityActions"
+            android:tag="cancel"
+
+            android:background="@drawable/button_selected_green"
+            android:textColor="@color/_white"
+            android:text="@string/btn_cancel" />
+
+    </LinearLayout>
+
+</RelativeLayout>

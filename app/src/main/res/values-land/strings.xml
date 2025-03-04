@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zones_proxi">Zones proxi</string>
+    <string name="zones_contrat">Zones contrat</string>
+		<string name="email_sent">Un email vous a été envoyé</string>
+    <string name="invalid_email">Adresse email invalide</string>
+    <string name="no_network">Pas de connexion réseau</string>
+		<string name="update_critical_title">Mise à jour requise</string>
+    <string name="update_critical_message">Une mise à jour critique est nécessaire pour continuer à utiliser l'application. Veuillez mettre à jour pour continuer.</string>
+    <string name="update_warning_message">La mise à jour a échoué. Certaines fonctionnalités pourraient ne pas fonctionner correctement.</string>
+    <string name="retry">Réessayer</string>
+    <string name="quit">Quitter</string>
+    <string name="error_permission_denied">La plupart des fonctions vous seront inaccessibles.</string>
+    <string name="error_update_check">Une erreur s\'est produite lors de la vérification de la mise à jour. Redémarrez votre application.</string>
+    <string name="version_format">Version: %s</string>
+</resources>

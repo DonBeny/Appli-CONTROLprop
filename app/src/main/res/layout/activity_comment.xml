@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.CommentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/main_ctrl_prop">
+
+        <TextView android:id="@+id/comment_activity_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+
+
+            android:text="@string/title_comment"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textColor="@color/_white" />
+
+        <Button android:id="@+id/comment_activity_prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+
+            android:onClick="commentActivityActions"
+
+            android:text="@string/_prev"
+            android:textColor="@color/_white"
+            android:textSize="35sp"/>
+
+    </RelativeLayout>
+
+    <TextView android:id="@+id/comment_activity_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="100dp" />
+
+</LinearLayout>

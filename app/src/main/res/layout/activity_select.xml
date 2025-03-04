@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.SelectActivity">
+
+    <RelativeLayout android:id="@+id/select_activity_title_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/select_activity_search_lyt"
+
+        android:background="@color/main_ctrl_prop">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:padding="20dp"
+
+            android:textSize="30sp"
+            android:textColor="@color/_white"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:text="@string/_selection"/>
+
+        <TextView android:id="@+id/select_activity_prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:padding="20dp"
+
+            android:onClick="selectActivityActions"
+            android:tag="cancel"
+
+            android:text="@string/_prev"
+            android:textColor="@color/_white"
+            android:textSize="35sp"/>
+
+        <ImageView android:id="@+id/select_activity_deco_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+
+            android:onClick="selectActivityActions"
+            android:tag="off"
+
+            android:contentDescription="@string/wait"
+
+            android:src="@drawable/bouton_deconneter_blanc"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/select_activity_search_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/select_activity_title_lyt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/select_activity_select_lyt">
+
+        <EditText android:id="@+id/select_activity_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+
+            android:inputType="text"
+            android:autofillHints=""
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="24sp"/>
+
+        <ImageView android:id="@+id/select_activity_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:onClick="selectActivityActions"
+            android:tag="search"
+
+            android:contentDescription="@string/wait"
+            android:src="@drawable/icone_loupe"/>
+
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/select_activity_select_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/select_activity_search_lyt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/select_activity_check_box_lyt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <FrameLayout android:id="@+id/select_activity_agc_blk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+
+                android:tag="agc"
+                android:onClick="selectActivityActions">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:contentDescription="@string/lbl_agc"
+                        android:src="@drawable/agence_vert"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textColor="@color/main_ctrl_prop"
+                        android:textSize="20sp"
+                        android:text="@string/lbl_agc"/>
+
+                </RelativeLayout>
+
+                <pl.droidsonroids.gif.GifImageView android:id="@+id/select_activity_wait_agc_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="10dp"
+
+                    android:src="@drawable/load"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+            <TextView android:id="@+id/select_activity_agc_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="80dp"
+
+                android:onClick="selectActivityActions"
+                android:tag="agc"/>
+
+            <FrameLayout android:id="@+id/select_activity_grp_blk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+
+                android:onClick="selectActivityActions"
+                android:tag="grp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:contentDescription="@string/lbl_grp"
+                        android:src="@drawable/groupement_residences_vert"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textColor="@color/main_ctrl_prop"
+                        android:textSize="20sp"
+                        android:text="@string/lbl_grp"/>
+
+                </RelativeLayout>
+
+                <pl.droidsonroids.gif.GifImageView android:id="@+id/select_activity_wait_grp_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="10dp"
+
+                    android:src="@drawable/load"
+                    android:visibility="invisible" />
+
+            </FrameLayout>
+
+            <TextView android:id="@+id/select_activity_grp_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="80dp"
+
+                android:onClick="selectActivityActions"
+                android:tag="grp"/>
+
+            <FrameLayout android:id="@+id/select_activity_rsd_blk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+
+                android:onClick="selectActivityActions"
+                android:tag="rsd">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:contentDescription="@string/lbl_rsd"
+                        android:src="@drawable/residence_vert"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textColor="@color/main_ctrl_prop"
+                        android:textSize="20sp"
+                        android:text="@string/lbl_rsd"/>
+
+                </RelativeLayout>
+
+                <pl.droidsonroids.gif.GifImageView android:id="@+id/select_activity_wait_rsd_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="10dp"
+
+                    android:src="@drawable/load"
+                    android:visibility="invisible" />
+
+            </FrameLayout>
+
+            <TextView android:id="@+id/select_activity_rsd_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="80dp"
+
+                android:onClick="selectActivityActions"
+                android:tag="rsd"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/select_activity_check_box_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/select_activity_select_lyt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/select_activity_next_lyt"
+
+        android:orientation="vertical">
+
+        <CheckBox android:id="@+id/select_activity_proxi_chk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingStart="10dp"
+
+            android:checked="true"
+            android:text="@string/zones_proxi"
+            android:textColor="@color/main_ctrl_prop"
+            android:textSize="24sp"/>
+
+        <CheckBox android:id="@+id/select_activity_contra_chk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingStart="10dp"
+
+            android:checked="true"
+            android:text="@string/zones_contrat"
+            android:textColor="@color/main_ctrl_prop"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/select_activity_next_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/select_activity_check_box_lyt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginBottom="10dp">
+
+        <Button android:id="@+id/select_activity_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="selectActivityActions"
+            android:tag="go"
+
+            android:background="@drawable/button_selected_green"
+            android:textColor="@color/_white"
+            android:textSize="20sp"
+            android:text="@string/btn_next"/>
+
+        <pl.droidsonroids.gif.GifImageView android:id="@+id/select_activity_wait_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:elevation="10dp"
+
+            android:src="@drawable/load"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

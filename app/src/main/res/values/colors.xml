@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="main_ctrl_prop">#45B40B</color>
+    <color name="_white">#FFFFFF</color>
+    <color name="_light_grey">#F0F0F0</color>
+    <color name="_light_green">#30A570</color>
+    <color name="_dark_grey" >#BDBDBD</color>
+    <color name="_black" >#000000</color>
+    <color name="_red" >#DD0000</color>
+    <color name="_orange" >#FFA500</color>
+		<!-- Couleurs mode clair -->
+    <color name="text_primary_light">#000000</color>
+    <color name="text_secondary_light">#757575</color>
+    <color name="background_primary_light">#FFFFFF</color>
+    <color name="background_secondary_light">#F5F5F5</color>
+    <color name="button_background_light">#2196F3</color>
+    <color name="button_text_light">#FFFFFF</color>
+		<!-- Couleurs mode sombre -->
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B3FFFFFF</color>
+    <color name="background_primary_dark">#121212</color>
+    <color name="background_secondary_dark">#1E1E1E</color>
+    <color name="button_background_dark">#1976D2</color>
+    <color name="button_text_dark">#FFFFFF</color>
+</resources>

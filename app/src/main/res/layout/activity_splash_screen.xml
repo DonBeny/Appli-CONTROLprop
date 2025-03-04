@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="100"
+
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.SplashScreenActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+
+        android:layout_gravity="center_horizontal"
+
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+
+            android:src="@drawable/logo_mob" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+
+        android:layout_gravity="center_horizontal"
+
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+
+            android:src="@drawable/new_controlprop" />
+
+    </RelativeLayout>
+
+    <TextView android:id="@+id/splash_screen_activity_version_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+
+        android:layout_gravity="bottom|end"
+        android:gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+
+        android:text="version : 2.0.10" />
+
+</LinearLayout>

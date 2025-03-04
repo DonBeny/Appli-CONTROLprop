@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.SignatureActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_ctrl_prop"
+        android:orientation="horizontal" >
+
+        <TextView android:id="@+id/take_picture_activity_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="25dp"
+            android:text="@string/lbl_sign"
+            android:textColor="@color/_white"
+            android:textAllCaps="true"
+            android:textSize="25sp" />
+
+        <TextView android:id="@+id/take_picture_activity_prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:onClick="signatureActivityActions"
+            android:tag="cancel"
+            android:text="@string/_prev"
+            android:textColor="@color/_white"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <Button android:id="@+id/take_picture_activity_ctrl_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="signatureActivityActions"
+        android:tag="valid"
+        android:background="@drawable/button_selected_green"
+        android:textColor="@color/_white"
+        android:textSize="20sp"
+        android:text="@string/btn_save" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.github.gcacace.signaturepad.views.SignaturePad android:id="@+id/take_picture_activity_ctrl_signature_pad"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:background="@color/_white" />
+
+            <Button android:id="@+id/take_picture_activity_ctrl_clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:onClick="signatureActivityActions"
+                android:tag="clearPadCtrl"
+                android:background="@drawable/button_selected_green"
+                android:textColor="@color/_white"
+                android:text="@string/btn_clear" />
+
+            <EditText android:id="@+id/take_picture_activity_agt_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingHorizontal="10dp"
+
+                android:hint="@string/hint_agent_name"
+                android:inputType="text" />
+
+            <com.github.gcacace.signaturepad.views.SignaturePad android:id="@+id/take_picture_activity_agt_signature_pad"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+
+                android:background="@color/_white" />
+
+            <Button android:id="@+id/take_picture_activity_agt_clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:onClick="signatureActivityActions"
+                android:tag="clearPadAgt"
+
+                android:background="@drawable/button_selected_green"
+                android:textColor="@color/_white"
+                android:text="@string/btn_clear" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

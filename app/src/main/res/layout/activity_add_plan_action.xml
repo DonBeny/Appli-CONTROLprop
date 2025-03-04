@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.AddPlanActionActivity" >
+
+    <RelativeLayout android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_Layout"
+
+        android:background="@color/main_ctrl_prop"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/add_plan_action_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="25dp"
+
+            android:text="@string/plan_d_action"
+            android:textColor="@color/_white"
+            android:textAllCaps="true"
+            android:textSize="25sp"/>
+
+        <TextView android:id="@+id/add_plan_action_prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:padding="20dp"
+
+            android:onClick="addPlanActivityActions"
+            android:tag="cancel"
+
+            android:text="@string/_prev"
+            android:textColor="@color/_white"
+            android:textSize="35sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/button_Layout"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+
+        app:layout_constraintTop_toBottomOf="@id/title_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_layout"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_plan_action_save_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="30"
+
+            android:layout_margin="5dp"
+
+            android:onClick="addPlanActivityActions"
+            android:tag="save"
+
+            android:background="@drawable/button_selected_green"
+            android:textColor="@color/_white"
+            android:textSize="12sp"
+            android:text="@string/btn_save"/>
+
+        <Button
+            android:id="@+id/add_plan_action_alert_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="40"
+
+            android:layout_marginTop="-3.5dp"
+
+            android:onClick="addPlanActivityActions"
+            android:tag="alert"
+
+            android:background="@drawable/button_selected_green"
+            android:textColor="@color/_white"
+            android:textSize="12sp"
+            android:text="@string/save_and_add_alert"/>
+
+        <Button
+            android:id="@+id/add_plan_action_valid_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="30"
+
+            android:layout_margin="5dp"
+
+            android:onClick="addPlanActivityActions"
+            android:tag="valid"
+
+            android:background="@drawable/button_selected_green"
+            android:textColor="@color/_white"
+            android:textSize="12sp"
+            android:text="@string/btn_lift_plan"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="100"
+
+        app:layout_constraintTop_toBottomOf="@id/button_Layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView android:labelFor="@+id/add_plan_action_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+
+                android:text="@string/select_date"/>
+
+            <EditText android:id="@+id/add_plan_action_date_txt"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="50dp"
+
+                android:inputType="date"
+                android:autofillHints="no"/>
+
+        </LinearLayout>
+
+        <EditText android:id="@+id/add_plan_action_plan_txt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+
+            android:gravity="top"
+            android:layout_marginHorizontal="10dp"
+
+            android:background="@drawable/button_standard"
+
+            android:inputType="textMultiLine"
+            android:autofillHints="no"
+            tools:ignore="LabelFor"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

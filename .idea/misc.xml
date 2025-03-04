@@ -1,0 +1,106 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/button_desabled.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/button_enabled.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/button_selected_green.xml" value="0.2945" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/button_selected_red.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/button_standard.xml" value="0.17962962962962964" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/ctrl_note_green.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/ctrl_note_grey.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/ctrl_note_orange.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/ctrl_note_red.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/drawable/shadow_border.xml" value="0.1055" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.2019892884468248" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout-sw600dp/activity_make_ctrl.xml" value="0.20179801071155318" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout-sw600dp/activity_select.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_add_comment.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_add_plan_action.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_comment.xml" value="0.13194444444444445" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_ctrl_zone.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_finish_ctrl.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_get_mail.xml" value="0.16379310344827586" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_make_ctrl.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_make_select.xml" value="0.10674157303370786" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_result_search.xml" value="0.42934782608695654" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_select.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_select_search.xml" value="0.13286713286713286" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_send_mail.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_signature.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_splash_screen.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_start_ctrl.xml" value="0.2674772036474164" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_synchronize.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/activity_type_ctrl.xml" value="0.2674772036474164" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/agence_item.xml" value="0.13194444444444445" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/content_scrolling.xml" value="0.42934782608695654" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/criter_item.xml" value="0.42934782608695654" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/element_item.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/fiche_resid_item.xml" value="0.42934782608695654" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/group_item.xml" value="0.1043956043956044" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/groupe_item.xml" value="0.36302083333333335" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/line_zones_layout.xml" value="0.2672239108409321" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/list_resid_item.xml" value="0.42934782608695654" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/resid_item.xml" value="0.36302083333333335" />
+        <entry key="..\:/AndroidStudioProjects/Test7/app/src/main/res/layout/title_zone_item.xml" value="0.42934782608695654" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="android.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="17">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="android.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+          <item index="15" class="java.lang.String" itemvalue="org.jspecify.annotations.Nullable" />
+          <item index="16" class="java.lang.String" itemvalue="jakarta.annotation.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="17">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="android.annotation.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+          <item index="14" class="java.lang.String" itemvalue="lombok.NonNull" />
+          <item index="15" class="java.lang.String" itemvalue="org.jspecify.annotations.NonNull" />
+          <item index="16" class="java.lang.String" itemvalue="jakarta.annotation.Nonnull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

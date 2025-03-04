@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/new_image_fond_tablette"
+
+    tools:context=".controllers.activities.MakeCtrlActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout android:id="@+id/make_ctrl_activity_blk_top_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+
+            android:orientation="horizontal" >
+
+            <!-- BLK LEFT => NAME + BTN CANCEL -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50" >
+
+                <TextView android:id="@+id/make_ctrl_activity_name_rsd_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+
+                    android:text="@string/hint_nam_rsd"
+                    android:textColor="@color/main_ctrl_prop"
+                    android:textSize="15sp" />
+
+                <Button android:id="@+id/make_ctrl_activity_prev_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+
+                    android:padding="5dp"
+                    android:paddingHorizontal="0dp"
+
+                    style="@style/Widget.AppCompat.Button.Borderless"
+
+                    android:onClick="makeCtrlActivityActions"
+                    android:tag="cancel"
+
+                    android:text="@string/_prev"
+                    android:textColor="@color/main_ctrl_prop"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <!-- BLK RIGHT => REF + ENTRY + ADR -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+
+                android:orientation="vertical" >
+
+                <TextView android:id="@+id/make_ctrl_activity_ref_rsd_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/hint_ref_rsd"
+                    android:textColor="@color/main_ctrl_prop"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/make_ctrl_activity_entry_rsd_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/hint_entry_rsd"
+                    android:textSize="12sp" />
+
+                <TextView android:id="@+id/make_ctrl_activity_adr_rsd_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:lines="2"
+
+                    android:text="@string/hint_adr_rsd"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ECDR + GRD + AGT -->
+        <LinearLayout android:id="@+id/make_ctrl_activity_ref_rsd_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/make_ctrl_activity_blk_top_lyt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout android:id="@+id/make_ctrl_activity_ecdr_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/make_ctrl_activity_ecdr_lbl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:text="@string/lbl_ref_secteur" />
+
+                <TextView android:id="@+id/make_ctrl_activity_ecdr_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:layout_marginStart="5dp"
+                    android:maxLines="1"
+
+                    android:text="@string/hint_ref_sec"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/make_ctrl_activity_adm_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/make_ctrl_activity_adm_lbl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:text="@string/lbl_ref_adm" />
+
+                <TextView android:id="@+id/make_ctrl_activity_adm_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:layout_marginStart="5dp"
+                    android:maxLines="1"
+
+                    android:text="@string/hint_ref_admin"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/make_ctrl_activity_agt_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/make_ctrl_activity_agt_lbl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="48"
+
+                    android:text="@string/lbl_ref_agt" />
+
+                <Spinner android:id="@+id/make_ctrl_activity_agt_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="52" >
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/make_ctrl_activity_note_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+
+            android:layout_below="@+id/make_ctrl_activity_ref_rsd_lyt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:orientation="horizontal" >
+
+            <TextView android:id="@+id/make_ctrl_activity_note_ctrl_txt"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="50"
+
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+
+                android:background="@drawable/ctrl_note_grey"
+                android:textSize="30sp"
+                android:text="@string/txt_so" />
+
+            <ImageButton android:id="@+id/make_ctrl_activity_tech_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="200dp"
+                android:padding="15dp"
+                android:scaleType="fitXY"
+
+                android:onClick="makeCtrlActivityActions"
+                android:tag="sendMail"
+
+                android:background="@drawable/button_standard"
+                android:src="@drawable/icono_p_techniques_4"
+                android:contentDescription="@string/hint_desordres_techniques" />
+
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView android:id="@+id/make_ctrl_activity_wait_grill"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_below="@+id/make_ctrl_activity_note_lyt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+
+            android:elevation="10dp"
+            android:src="@drawable/load"
+            android:visibility="invisible" />
+
+        <ScrollView android:id="@+id/make_ctrl_activity_scroll_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/make_ctrl_activity_note_lyt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:visibility="visible"
+
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="150dp" >
+
+            <LinearLayout android:id="@+id/make_ctrl_activity_list_zone_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true" >
+
+        <Button android:id="@+id/make_ctrl_activity_end_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+
+            android:onClick="makeCtrlActivityActions"
+            android:tag="valid"
+
+            android:background="@drawable/button_selected_green"
+            android:textColor="@color/_white"
+            android:textSize="40sp"
+            android:text="@string/_end" />
+
+        <pl.droidsonroids.gif.GifImageView android:id="@+id/make_ctrl_activity_wait_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="25dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="50dp"
+
+            android:elevation="10dp"
+            android:src="@drawable/load"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+</RelativeLayout>
